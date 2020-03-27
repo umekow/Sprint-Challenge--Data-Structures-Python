@@ -57,7 +57,7 @@ class LinkedList:
             return 
         
         if node.get_next() is None: 
-            self.add_to_head(node)
+            self.head = node
             node.set_next(prev)
             return
         next_node = node.get_next()
